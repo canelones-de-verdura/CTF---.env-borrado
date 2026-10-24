@@ -13,7 +13,7 @@ O no?
 Después de clonar y `cd`ar el repo:
 
 ```bash
-docker build -t ctf-deleted-env .
+docker build -f Containerfile -t ctf-deleted-env .
 docker run --rm -p 1337:1337 ctf-deleted-env
 ```
 
