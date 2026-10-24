@@ -1,5 +1,7 @@
 # Deleted .env
 
+> General skills, medium?
+
 ## Premisa
 
 Son un hacker recontra picante y lograste obtener acceso al servidor de producción de una empresa.
