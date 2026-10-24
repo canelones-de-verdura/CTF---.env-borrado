@@ -4,13 +4,13 @@ import os
 app = Flask(__name__)
 
 env_path = "/opt/webapp/.env"
-with open(env_path) as f:
-    for line in f:
-        line = line.strip()
-        if not line or line.startswith("#"):
-            continue
-        k, v = line.split("=", 1)
-        os.environ[k] = v
+f = open(env_path)
+for line in f:
+    line = line.strip()
+    if not line or line.startswith("#"):
+        continue
+    k, v = line.split("=", 1)
+    os.environ[k] = v
 
 os.remove(env_path)  # andá a leerlo
 
