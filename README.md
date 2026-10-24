@@ -20,7 +20,7 @@ docker run --rm -p 1337:1337 ctf-deleted-env
 Y desde otra terminal:
 
 ```bash
-nc <ip_del_server> 1337
+nc localhost 1337
 ```
 
 Cada tanto se rompe netcat con `Ncat: assertion failed: count <= INT_MAX QUITTING.` y rompe todo el container. Perdón.
